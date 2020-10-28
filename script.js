@@ -1,4 +1,13 @@
-//armazezar um elemento numa variável
-var titulo = document.getElementById("tituto");
-//depois eu continuo...
-titulo.innerHTML = "Segundo Título";
+function alterar(titulo){
+    document.getElementById("titulo").innerHTML = titulo;
+    document.getElementById("campo").value = titulo;
+}
+function somar(x, y){
+    let total = x + y;
+    return total;
+}
+
+function clicou(){
+    document.getElementById("titulo").innerHTML = "Evento click";
+    document.getElementById("campo").value = "You click";
+}
