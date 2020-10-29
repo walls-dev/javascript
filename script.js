@@ -63,3 +63,16 @@ function ocultarTelefone(element){
     document.getElementById("telefone").style.display='none';
     document.getElementById("mostrartelefone").style.display = 'block';
 }
+function menuToggle(){
+    let menuArea = document.getElementById("menu-area");
+    //verificar se contem a classe menu-opened com o contains
+    //posso fazer direto com js somente com condiçao if para width (desafio)
+    if(menuArea.classList.contains('menu-opened') == true){
+        menuArea.classList.remove('menu-opened');
+    }else{
+        menuArea.classList.add('menu-opened');
+    }
+}
+function fecharMenu(){
+    document.getElementById("menu-area").classList.remove('menu-opened');
+}

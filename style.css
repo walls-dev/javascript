@@ -5,16 +5,19 @@
     padding:0px;
 }
 body{
+    margin:auto;
     background-color: #414141;
-    margin-top: 50px;
+    
 }
 div.corpo{
-    margin:auto;
-    width:420px;
+    
+    width:100vw;
+    height:100vh;
     background-color: #2f3136;
     border-radius: 5px;
     padding:0px 10px 10px 10px;
     color:white;
+
 }
 input{ 
     margin-bottom: 15px;
@@ -43,7 +46,7 @@ button.border{
 h1{
     background-color:#202225;
     color:#fff;
-    padding:10px;
+    padding:20px;
     font-family: 'Orbitron', sans-serif;
     font-size: 18pt;
     margin: -10px -10px 0px -10px;/*Importante para colar o background no topo*/
@@ -82,8 +85,9 @@ h2{
 div#telefone{
     display:none;
     margin-top: 20px;
-    text-align:center;
+    
 }
+
 button.mostrartelefone{
     border:1px solid #00ff00;
     padding:10px 15px;
@@ -106,31 +110,34 @@ aside{
     z-index: 999;
     display: flex;
 }
-menu-opener{
+#menu-opener{
     width:40px;
     height:40px;
     cursor:pointer;
     margin-top: 10px;
     margin-right: 10px;
 }
-menu-area{
-    width:200px;
+#menu-area{
+    width:0px;
     height:100vh;
     background-color:#202225;
     overflow-x:hidden;
     overflow-y:auto;
     transition:all ease .5s;
 }
-menu-area ul, #menu-area li{
+#menu-area ul, #menu-area li{
     padding:0;
     list-style: none;
 }
 #menu-area li{
     display:block;
     padding:10px;
-    color:#555;
+    background-color:#555;
     cursor:pointer;
 }
 #menu-area li:hover{
     background-color: #ddd;
+}
+.menu-opened{
+    width:200px !important;
 }
