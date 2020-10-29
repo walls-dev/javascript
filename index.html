@@ -10,26 +10,46 @@
     <div class="corpo">
         <h1 id="titulo">W4web</h1>
         <h2 id="subtitulo">Troque a cor do Subtítulo</h2>
-        <input id="campo" onmouseover="this.style.border='1px solid red'" onmouseout="this.style.border=''" type="text" name="usuario" value="" /><br>
-        
-        <input class="marcar" type="radio" onclick="mostrar()" name="marcar" id="marcar">
-        <label for="marcar">Marque a opção para preencher o formulário</label>
-        <br>
-        <input id="campo_oculto" onkeyup="digitou(event)" type="text" name="campo_oculto" value="" />
-        <button class="border" onclick="mostrar()">Mostrar</button>
-        <button class="border" onclick="ocultar()">Ocultar</button>
-        <button class="border" onclick="mostrar()">Mostrar</button>
-        <button class="border" onclick="ocultar()">Ocultar</button>
-
-        <div class="container">
-            <button class="azul cor" onclick="azul()" value="">azul</button>
-            <button class="vermelho cor" onclick="vermelho()" value="">vermelho</button>
-            <button class="verde cor" onclick="verde()" value="">verde</button>
-            <button class="laranja cor" onclick="laranja()" value="">laranja</button>
-        </div>
-        <div id="telefone">(12) 2103-2019</div>
-        <button class="mostrartelefone" id="mostrartelefone" onclick="mostrarTelefone(this)">Mostrar Telefone</button>
-        <button class="ocultartelefone" id="ocultartelefone" onclick="ocultarTelefone(this)">Ocultar Telefone</button>
+<!--
+INICIO MENU
+-->
+<aside>
+    <div id="menu-opener">
+        <img src="menu.png" width="36">
+    </div>
+    <div id="menu-area">
+        <ul>
+            <li>Home</li>
+            <li>Sobre</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+</aside>
+<!--
+FIM MENU
+-->
+        <section>
+            <input id="campo" onmouseover="this.style.border='1px solid red'" onmouseout="this.style.border=''" type="text" name="usuario" value="" /><br>
+            
+            <input class="marcar" type="radio" onclick="mostrar()" name="marcar" id="marcar">
+            <label for="marcar">Marque a opção para preencher o formulário</label>
+            <br>
+            <input id="campo_oculto" onkeyup="digitou(event)" type="text" name="campo_oculto" value="" />
+            <button class="border" onclick="mostrar()">Mostrar</button>
+            <button class="border" onclick="ocultar()">Ocultar</button>
+            <button class="border" onclick="mostrar()">Mostrar</button>
+            <button class="border" onclick="ocultar()">Ocultar</button>
+    
+            <div class="container">
+                <button class="azul cor" onclick="azul()" value="">azul</button>
+                <button class="vermelho cor" onclick="vermelho()" value="">vermelho</button>
+                <button class="verde cor" onclick="verde()" value="">verde</button>
+                <button class="laranja cor" onclick="laranja()" value="">laranja</button>
+            </div>
+            <div id="telefone">(12) 2103-2019</div>
+            <button class="mostrartelefone" id="mostrartelefone" onclick="mostrarTelefone(this)">Mostrar Telefone</button>
+            <button class="ocultartelefone" id="ocultartelefone" onclick="ocultarTelefone(this)">Ocultar Telefone</button>
+        </section>
 
         <script src="script.js"></script>
     </div>
