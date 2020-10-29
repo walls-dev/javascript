@@ -3,12 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Javascript</title>
 </head>
 <body>
-    <h1 id="titulo">Seja bem vindo!</h1>
-    <input id="campo" type="text" onclick ="this.innerHTML='changed'"  name="usuario" value="Nome do Usuário">
-    <button onclick="clicou()">Clique aqui</button>
-    <script src="script.js"></script>
+    <div class="corpo">
+        <h1 id="titulo">W4web</h1>
+        <h2 id="subtitulo">Troque a cor do Subtítulo</h2>
+        <input id="campo" onmouseover="this.style.border='1px solid red'" onmouseout="this.style.border=''" type="text" name="usuario" value="" /><br>
+        
+        <input class="marcar" type="radio" onclick="mostrar()" name="marcar" id="marcar">
+        <label for="marcar">Marque a opção para preencher o formulário</label>
+        <br>
+        <input id="campo_oculto" onkeyup="digitou(event)" type="text" name="campo_oculto" value="" />
+        <button class="border" onclick="mostrar()">Mostrar</button>
+        <button class="border" onclick="ocultar()">Ocultar</button>
+        <button class="border" onclick="mostrar()">Mostrar</button>
+        <button class="border" onclick="ocultar()">Ocultar</button>
+
+        <div class="container">
+            <button class="azul cor" onclick="azul()" value="">azul</button>
+            <button class="vermelho cor" onclick="vermelho()" value="">vermelho</button>
+            <button class="verde cor" onclick="verde()" value="">verde</button>
+            <button class="laranja cor" onclick="laranja()" value="">laranja</button>
+        </div>
+        <div id="telefone">(12) 2103-2019</div>
+        <button class="mostrartelefone" id="mostrartelefone" onclick="mostrarTelefone(this)">Mostrar Telefone</button>
+        <button class="ocultartelefone" id="ocultartelefone" onclick="ocultarTelefone(this)">Ocultar Telefone</button>
+
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>

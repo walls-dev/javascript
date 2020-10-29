@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: #414141;
+    margin-top: 50px;
+}
+div.corpo{
+    margin:auto;
+    width:420px;
+    background-color: #2f3136;
+    border-radius: 5px;
+    padding:0px 10px 10px 10px;
+    color:white;
+}
+input{ 
+    margin-bottom: 15px;
+    width:200px;
+    line-height:25px;
+}
+input.marcar{
+    margin-bottom: 20px;
+    width:20px;
+}
+input#campo_oculto{
+    display:none;
+}
+button.border{
+    margin-top: 20px;
+    border:2px solid #0000ff;
+    background-color: transparent;
+    color:#0000ff;
+    font-weight: bold;
+    padding:10px 15px;
+    height:100px;
+    width:100px;
+}
+
+
+h1{
+    background-color:#202225;
+    color:#fff;
+    padding:10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18pt;
+    margin: -10px -10px 0px -10px;/*Importante para colar o background no topo*/
+}
+h2{
+    margin: 20px 0px;
+}
+.container{
+    margin-top: 20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.cor{
+    width:110px;
+    height:50px;
+    padding:10px 15px;
+    color:white;
+}
+.azul{
+    background-color: #0000FF;
+    color:#fff;
+}
+.vermelho{
+    background-color: #ff0000;
+    color:#fff;
+}
+.verde{
+    background-color: #00ff00;
+    color:#000;
+}
+.laranja{
+    background-color: #f4b700;
+    color: #000;
+}
+div#telefone{
+    display:none;
+    margin-top: 20px;
+    text-align:center;
+}
+button.mostrartelefone{
+    border:1px solid #00ff00;
+    padding:10px 15px;
+    background-color: transparent;
+    color:#00ff00;
+    margin-top: 15px;
+}
+button.ocultartelefone{
+    display:none;
+    border:1px solid #ff0000;
+    padding:10px 15px;
+    background-color: transparent;
+    color:#ff0000;
+    margin-top: 15px;
+}
