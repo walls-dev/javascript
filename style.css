@@ -141,3 +141,22 @@ aside{
 .menu-opened{
     width:200px !important;
 }
+div.quebra{
+    display:flex;
+}
+section#second-block{
+    padding-top: 0px;
+    margin-top: 0px;
+    width:450px;
+    margin-left: 25px;
+    background-color:#37393e;
+    padding:0px 15px;
+}
+section#third-block{
+    padding-top: 0px;
+    margin-top: 0px;
+    width:450px;
+    margin-left: 25px;
+    background-color:#37393e;
+    padding:0px 15px;
+}

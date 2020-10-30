@@ -76,3 +76,47 @@ function menuToggle(){
 function fecharMenu(){
     document.getElementById("menu-area").classList.remove('menu-opened');
 }
+let dia = 7;
+let diaNome = "";
+
+switch(dia){
+    case 1:
+        diaNome = 'Segunda-feira';
+        break;
+    case 2:
+        diaNome = 'Terça-feira';
+        break;
+    case 3:
+        diaNome = 'Quarta-feira';
+        break;
+    case 4:
+        diaNome = 'Quinta-feira';
+        break;
+    case 5:
+        diaNome = 'Sexta-feira';
+        break;
+    case 6:
+    case 7:
+        diaNome = 'Final de Semana';
+        break;
+    default:
+        diaNome = 'Dia de Semana';
+        break;
+}
+document.getElementById("dia").innerHTML = "Hoje é: "+diaNome;
+
+//FOR LOOP
+//FOR LOOP ARRAY
+let carros = ['Ferrari', 'Fusca', 'Palio', 'Corolla', 'Uno'];
+let html = '<ol>';
+
+    for(let i in carros){
+        html+='<li>'+ carros[i] +'</li>'+'</br>';
+    }
+
+html += '</ol>';
+/*let texto = "";
+for(let i = 0; i <= 10; i++){
+    texto = texto + i + '</br>';
+}*/
+document.getElementById("demo").innerHTML = html;
