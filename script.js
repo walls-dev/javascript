@@ -76,7 +76,7 @@ function menuToggle(){
 function fecharMenu(){
     document.getElementById("menu-area").classList.remove('menu-opened');
 }
-let dia = 7;
+let dia = 6;
 let diaNome = "";
 
 switch(dia){
@@ -107,7 +107,7 @@ document.getElementById("dia").innerHTML = "Hoje é: "+diaNome;
 
 //FOR LOOP
 //FOR LOOP ARRAY
-let carros = ['Ferrari', 'Fusca', 'Palio', 'Corolla', 'Uno'];
+let carros = ['Ferrari', 'Fusca', 'Palio', 'Corolla', 'Uno', 'Prisma', 'Peogeot'];
 let html = '<ol>';
 
     for(let i in carros){
@@ -120,3 +120,6 @@ for(let i = 0; i <= 10; i++){
     texto = texto + i + '</br>';
 }*/
 document.getElementById("demo").innerHTML = html;
+
+let nome = "Walls Pereira da Silva";
+console.log(nome.lenght);
