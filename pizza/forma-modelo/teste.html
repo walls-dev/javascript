@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Demo</title>
+    <style>
+        .cartao-item{
+            display:flex;
+            flex-direction: column;
+            
+        }
+        .result{
+            position:fixed;
+            top:190px;
+            left:13px;
+            background-color: #063d71;
+            width:371px;
+            height: 50px;
+        }
+        .result p{
+            background-color: #063d71;
+            line-height: 30px;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin:20px;
+        }
+        input{
+            height:30px;
+            margin:13px;
+            width: 361px;
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="text" placeholder="Digite o número do cartão" id="message" maxlength="16">
+    <!--<div class="result">
+        <p id="result"></p>
+    </div>-->
+
+    <div class="forma-cartao">
+        
+    <div class="cartao-item">
+        <div class="cartao-item-img"><img src="images/cartão-de-crédito-azul.png" alt=""></div>
+        <div class="result"><p></p></div>
+    </div>
+    
+    </div>
+    
+    <script>
+        let message = document.querySelector('#message');
+        let result = document.querySelector('.result p');
+        message.addEventListener('input', function() {
+            result.textContent = this.value;
+        });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo html</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        header{
+            width:100%;
+            padding:15px;
+        }
+        header hr{
+            margin-left: -15px;
+            margin-right: -15px;
+            border:1px solid #00ff00;
+        }
+        body{
+            display:flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            justify-content: center;
+
+            width:90%;
+            font-family: Arial, Helvetica, sans-serif;
+            margin:auto;
+            border:1px solid #00ff00;
+            background-color: #0e1419;
+            color:#00ff00;
+        }
+        div#pagamento{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            width:30%;
+        }
+        button{
+            border: 1px solid #00ff00;
+            background-color: transparent;
+            padding:10px;
+            color:#00ff00;
+        }
+        input{
+            padding:10px;
+            width:70%;
+        }
+        div#split{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:blue;
+            width:30%;
+        }
+        div#arr{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:red;
+            width:30%;
+            
+        }
+        div#forth{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:#fff;
+            width:30%;
+            text-transform: uppercase;
+
+        }
+        div#fifth{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:#ffcc00;
+            width:30%;
+            text-transform: uppercase;
+        }
+        div#sixth{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:#ff00ff;
+            width:30%;
+            text-transform: uppercase;
+        }
+        div#seventh{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:#00ff00;
+            width:30%;
+            text-transform: uppercase;
+            text-align: right;
+        }
+        div#oito{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:blue;
+            width:30%;
+            text-transform: uppercase;
+            text-align: left;
+        }
+        div#nove{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:blue;
+            width:30%;
+            text-transform: uppercase;
+            text-align: left;
+        }
+        section.relogio{
+            line-height: 80px;
+            text-align: center;
+            background-color: #000;
+            color:red;
+            font-size: 40px;
+            
+        }
+        section.relogio button{
+            justify-content: flex-end;
+        }
+        div#dez{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:#00ff00;
+            width:30%;
+            text-transform: uppercase;
+            text-align: left;
+        }
+        div#aleatorio{
+            color:blue;
+            font-size: 30px;
+            text-align: right;
+        }
+        div#onze{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:#00ff00;
+            width:30%;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: left;
+        }
+        div#doze{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:#00ff00;
+            width:30%;
+            text-transform: uppercase;
+            text-align: left;
+        }
+        div#treze{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:#00ff00;
+            width:30%;
+            text-transform: uppercase;
+            text-align: left;
+        }
+        div#quatorze{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:#00ff00;
+            width:30%;
+            text-transform: uppercase;
+            text-align: left;
+        }
+        div#quinze, #dezesseis, #dezesete, #dezoito{
+            margin: 5px;
+            border:1px solid #00ff00;
+            padding:10px;
+            color:#00ff00;
+            width:30%;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<header>
+    <h1>W4web</h1>
+    <hr>
+</header>
+<body>
+    <div id="pagamento">
+            <label for="pg_txt">Verificar Pagamento</label>
+            <input type="text" id="pg_txt" placeholder="Cole o pagamento aqui">
+            <button type="submit" onclick="pagar()">Verificar</button>
+    </div>
+    <div id="nove">
+        <section class="relogio">
+            
+        </section>
+        <button onclick="comecar()"><bolder>></bolder></button>
+        <button onclick="parar()"><bolder>||</bolder></button>
+        <button onclick="stop()"><bolder>■</bolder></button>
+    </div>
+    <div id="split"> </div>
+    <div id="arr"></div>
+    <div id="forth">teste</div>
+    <div id="fifth">teste</div>
+    <div id="sixth">teste</div>
+    <div id="seventh">teste</div>
+    <div id="oito">teste</div>
+    <div id="dez" class="dez">
+        <button onclick="play()">PLAY</button>
+        <button onclick="pausar()">PAUSAR</button>
+    </div>
+    <div id="onze">
+        
+    </div>
+    <div id="doze"></div>
+    <div id="treze"></div>
+    <div id="quatorze"></div>
+    <div id="quinze"></div>
+    <div id="dezesseis"></div>
+    <div id="dezesete"></div>
+    <div id="dezoito"></div>
+    <script src="new.js"></script>
+</body>
+</html>
